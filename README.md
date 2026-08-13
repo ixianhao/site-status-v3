@@ -17,7 +17,7 @@ site-status-v3 是一个轻量、开源的站点状态页，使用 UptimeRobot A
 在线预览：<https://status.itvv.cn/>
 
 ![site-status-v3 Demo](./public/demo.png)
-
+>图片由AI生成仅供参考
 ## 特色
 
 - 多平台部署支持
