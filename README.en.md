@@ -10,9 +10,13 @@ English | [简体中文](./README.md)
 <br />
 </div>
 
+site-status-v3 is a lightweight open-source status page that uses UptimeRobot API v3 to fetch monitor and incident data, then presents site availability with a 60-day uptime calendar. It is suitable for personal sites, blogs, small products, and service groups, and can be deployed to Vercel, Cloudflare Pages, or other Nuxt-compatible platforms with environment variables.
+
 ## Demo
 
-Replace this section with your public demo URL after deployment.
+Live demo: <https://status.itvv.cn/>
+
+![site-status-v3 Demo](./public/demo.png)
 
 ## Features
 

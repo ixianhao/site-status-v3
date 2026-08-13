@@ -10,9 +10,13 @@
 <br />
 </div>
 
+site-status-v3 是一个轻量、开源的站点状态页，使用 UptimeRobot API v3 拉取监控与故障事件数据，并以 60 天可用率日历展示站点运行情况。它适合个人主页、博客、小型产品和服务集群，用一套环境变量即可快速部署到 Vercel、Cloudflare Pages 或其他 Nuxt 兼容平台。
+
 ## Demo
 
-请在部署后将这里替换为你的公开演示地址。
+在线预览：<https://status.itvv.cn/>
+
+![site-status-v3 Demo](./public/demo.png)
 
 ## 特色
 
