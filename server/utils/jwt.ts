@@ -16,7 +16,7 @@ export const signJwt = async (expiresIn: string = "30d"): Promise<string> => {
       .sign(SECRET_KEY); // secret key
     return token;
   } catch (error) {
-    throw new Error("Error signing JWT: " + error);
+    throw new Error("Error signing JWT: " + error, { cause: error });
   }
 };
 

@@ -7,14 +7,14 @@ import pkg from "./package.json";
 
 // site env
 const siteConfig = {
-  siteTitle: process.env.SITE_TITLE || "Site Status",
-  siteDescription: process.env.SITE_DESCRIPTION || "A simple status page powered by UptimeRobot",
-  siteKeywords: process.env.SITE_KEYWORDS || "status,page,uptime,monitoring",
+  siteTitle: process.env.SITE_TITLE || "ITVV站点监测",
+  siteDescription: process.env.SITE_DESCRIPTION || "一个简约的站点监测",
+  siteKeywords: process.env.SITE_KEYWORDS || "站点监测,监测,监控",
   siteLogo: process.env.SITE_LOGO || "/favicon.ico",
   siteIcp: process.env.SITE_ICP || "",
   countDays: Number(process.env.COUNT_DAYS || 60),
-  showLink: process.env.SHOW_LINK === "true",
-  platform: process.env.DEPLOYMENT_PLATFORM || "auto",
+  showLink: process.env.SHOW_LINK === "true" || true,
+  platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
 };
 
@@ -89,10 +89,10 @@ export default defineNuxtConfig({
   css: ["~/style/main.scss", "~/style/animate.scss"],
   // env
   runtimeConfig: {
-    apiUrl: process.env.API_URL || "https://api.uptimerobot.com/",
+    apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/",
     apiKey: process.env.API_KEY,
     sitePassword: process.env.SITE_PASSWORD,
-    siteSecretKey: process.env.SITE_SECRET_KEY || "change-this-secret",
+    siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
     public: siteConfig,
   },
   devServer: { port: 8566 },
@@ -136,7 +136,8 @@ export default defineNuxtConfig({
   },
   // i18n
   i18n: {
-    vueI18n: "./lang/i18n.config.ts",
+    restructureDir: "lang",
+    vueI18n: "i18n.config.ts",
   },
   // icon
   icon: {
